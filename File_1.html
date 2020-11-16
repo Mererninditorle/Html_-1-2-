@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы обратной связи</title>
+</head>
+<body>
+    <h1>Закажите суши</h1>
+    <!-- атрибут action - путь к файлу для обработки фориы на сервере -->
+    <form action="" method="GET">
+
+        Введите ваше имя: <input type="name" name="Name">
+        <br>
+
+        Введите город доставки: <select name="City">
+            <option>Москва</option>
+            <option>Видное</option>
+            <option>Балашиха</option> 
+            <!-- selected - ставит элемент первым-->
+            <option selected>Подольск</option>
+        </select>
+        <!-- <input type="city" name="City"> -->
+        <br>
+        
+        Введите адрес эл. почты: <input type="email" name="Mail">
+        <br>
+        
+        Введите номер телефона: <input type="tel" name="Tel">
+        <br>
+        
+        <input type="submit" value="Заказать суши">
+
+        <!-- input types
+            text - поле ввода текста
+            tel - поле вводв телефона
+            email - поле ввода почты
+            password - поле ввода пароля
+            
+            number -        |
+            date -          |
+                            }работают только в некторых браузерах    
+            week -          |
+            color -         |
+
+            Кнопки:
+            button - 
+            submit - отправить заполненные  данные
+            reset - стереть заполненные данные
+            image - submit в виде картинки
+        -->
+        <fieldset> <!--Делает рамку-->
+        <legend>Способ оплаты</legend>
+        <!-- checked - элемент изначально отмечен-->
+        <label><input type="radio" name="Payment" value="Наличными" checked> Наличными
+        </label>
+        <br>
+        <label><input type="radio" name="Payment" value="Картой"> Картой
+        </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Выберите бонус:</legend>
+        <input type="radio" name="Bonus" value="Филадельфия" checked> Филадельфия
+        <br>
+        <input type="radio" name="Bonus" value="Драгон маки"> Драгон маки
+        <br>
+        <input type="radio" name="Bonus" value="Капа маки"> Капа маки
+        </fieldset>
+
+        <fieldset>
+        <legend>Выберите блюдо:</legend>
+        <input type="checkbox" name="dish_1" value="Стеклянная лапша"> Стеклянная лапша
+        <br>
+        <input type="checkbox" name="dish_2" value="Калифорния"> Калифорния
+        <br>
+        <input type="checkbox" name="dish_3" value="Том Ям" checked> Том Ям
+        <br>
+        <input type="checkbox" name="dish_4" value="Мисо суп"> Мисо суп
+        </fieldset>
+        <textarea name="Comment" placeholder="Комментарий" cols="40" rows="5" style="resize: none;"></textarea>
+    </form>
+    <!-- cols и row:
+        задают кол-во символов по вертикали (rows) и горизонтали (cols)
+    -->
+
+</body>
+</html>

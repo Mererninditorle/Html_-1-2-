@@ -1,0 +1,79 @@
+/* .card {
+    width: 100px;
+    height: 200px;
+    background: #25A88C;
+    color: #A83A14;
+    border: 1px solid;
+    border-radius: 8px;
+    font: 100px / 2 sans-serif;
+    text-align: center;
+}
+.container {
+    background-color: #F56E33;
+    height: 500px;
+    display: flex;
+
+    /*
+        Направления осей:
+        row -  слева направо;
+        row-reverse - справа налево;
+        column - сверху вниз;
+        column-reverse - снизу вверх;
+    */
+    /* flex-direction: row; */
+
+    /*
+        justify-content:
+        flex-start - с начала оси
+        flex-end - с конца оси
+        center - по центру
+        space-between - первый элемент находится в начале оси, последний в конце, а между всеми елементами появляется равномерный отступ
+        space-around - равномерный отступ не между, а ВОКРУГ тегов
+    */
+    /* justify-content: center; */
+
+    /*
+        align-items:
+        stretch - высота элемента равна высоте родительского блока (по умолчанию)(если у элемента нет высоты)
+        center - по центру
+        flex-start - с начала оси
+        flex-end - с низу оси
+        baseline - выравнивание по нижнему краю конента
+    */
+    /* align-items: center; */
+/* }  */
+
+
+
+header {
+    height: 100px;
+    background: navajowhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font: 20px sans-serif;
+    color: lightseagreen;
+}
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.soc{
+    display: flex;
+}
+.soc li{
+    margin-left: 10px;
+}

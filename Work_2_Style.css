@@ -1,0 +1,50 @@
+.Header{
+    border-bottom: 3px solid;
+    border-color: white;
+    height: 138px;
+    background: chocolate;
+    font: 80px / 2 sans-serif;
+    text-align: center;
+}
+
+.Navi_Panel{
+    border-bottom: 3px solid;
+    border-color: white;
+    height: 60px;
+    background: crimson;
+    font: 30px / 2 sans-serif;
+    text-align: center;
+}
+
+.Main_Main{
+    border-bottom: 3px solid;
+    border-color: white;
+    display: flex;
+}
+
+.Main_content{
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-color: white;
+    width: 1000px;
+    height: 500px;
+    background: cornflowerblue;
+    font: 80px / 2 sans-serif;
+    text-align: center;
+}
+
+.Side_Panel{
+    border-bottom: 3px solid;
+    border-color: white;
+    width: 440px;
+    background: rgb(7, 180, 88);
+    font: 80px / 2 sans-serif;
+    text-align: center;
+}
+
+.Footer{
+    height: 139px;
+    background: chocolate;
+    font: 80px / 2 sans-serif;
+    text-align: center;
+}

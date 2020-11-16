@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS BOX MODEL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* .Dad { 
+             background-color: tomato; 
+             border: solid; 
+         } */
+        a {
+            text-decoration: none; /* underline | overline | line-through | none */
+            color: inherit; /* цвет как у родителя (body) */
+        }
+        .box {
+            background: darkolivegreen;
+             width: 300px; /* px, %, vh(viewport height), vw(viewport width) - ширина */
+            /*min-height: 100px ;/* px, % - высота, не использовать в % 
+            max-height: 200px;*/
+            overflow:  auto; /* выпадение контента из блока - visible | hidden | scroll | auto */
+            border-width: 5px; /*задавать только в пикселях*/
+            border-color: navy;
+            border-style: solid; /* стиль рамки solid | double | dotted | dashed */
+            border-right-style: dashed;
+            border-right-color: darkslateblue;
+            text-align: justify;
+            line-height: 1;
+            padding: 20px  100px 50px ; /* внутренний отступ, стороны задаются по часовой стрелке (верх, право, низ, лево) */
+            margin: 30px auto 100px;/* расстояние между тегами, считаются как внутренний отступ */
+
+        }
+        .menu {
+            width: 510px;
+            margin: 0 auto;
+            background:khaki;
+            list-style-type: none; /* none | disk | square | circle */
+            font-size: 0; /*чтобы убрать границы между столбцами (пробелы)*/
+        }
+        .menu li /*для тегов li внутри классов menu*/ {
+            height: 50px;
+            width: calc(100% / 3 - 2px);
+            border: 1px solid;
+            font: 20px sans-serif;
+            text-align: center;
+            display: inline-block; /* block | inline | inline-block (размещение на экране)*/ 
+        }
+        .menu a{
+            background: #dedede;
+            line-height: 50px; /* высота строки = высота блока => текст по центру по вертикали */ 
+            display: block;/* делает из блока кнопку */
+        }
+        .menu a:hover /* при наводке на тег меняет цвет и т.д. */{
+            background: dimgrey;
+        }
+    </style>
+</head>
+    <body>
+        <!-- ul.menu>li*3>a{link $} - Меню-->
+        <ul class="menu">
+            <li><a href="">link 1</a></li>
+            <li><a href="">link 2</a></li>
+            <li><a href="">link 3</a></li>
+        </ul>
+        <div class="Dad">
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam laborum mollitia ipsa suscipit a, ab, aliquid maxime tempore hic, vel maiores facilis. Ullam placeat labore illo libero, temporibus aut repellat. Animi, accusantium, ut ex sunt molestias officia repudiandae facilis consectetur eligendi quas ullam vel, dignissimos fugiat nulla impedit tempore harum modi illo labore quasi voluptatibus est! Quisquam iste deserunt provident ex id reiciendis in eaque harum temporibus, cumque exercitationem asperiores excepturi reprehenderit sed rerum aliquam perferendis veniam beatae, consequuntur possimus iure. Animi nemo commodi vel.</div>
+        
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam laborum mollitia ipsa suscipit a, ab, aliquid maxime tempore hic, vel maiores facilis. Ullam placeat labore illo libero, temporibus aut repellat. Animi, accusantium, ut ex sunt molestias officia repudiandae facilis consectetur eligendi quas ullam vel, dignissimos fugiat nulla impedit tempore harum modi illo labore quasi voluptatibus est! Quisquam iste deserunt provident ex id reiciendis in eaque harum temporibus, cumque exercitationem asperiores excepturi reprehenderit sed rerum aliquam perferendis veniam beatae, consequuntur possimus iure. Animi nemo commodi vel.</div>
+        </div>
+    </body>
+</html>
