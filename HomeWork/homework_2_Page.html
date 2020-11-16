@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Разработка сайта</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <h1>Закажите сайт!</h1>
+        Вас зовут: <input type="name" name="Name">
+        <br>
+        Ваш электронный адрес: <input type="email" name="email">
+        <br>
+        Тип сайта: <select name="page_type">
+            <option>Лендинг-пейдж</option>
+            <option selected>Интернет-магазин</option>
+            <option>Сайт-резюме</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Параметры заказа</legend>
+            <label><input type="checkbox" name="setting_1" value="Мобильная версия"> Мобильная версия
+            </label>
+            <br>
+            <label><input type="checkbox" name="setting_2" value="Версия для печати"> Версия для печати
+            </label>
+            <br>
+            <label><input type="checkbox" name="setting_3" value="Динамические эффекты"> Динамические эффекты
+            </label>
+            <br>
+            <label><input type="checkbox" name="setting"_4 value="Личный кабинет пользователя"> Личный кабинет пользователя
+            </label>
+        </fieldset>
+        <fieldset> 
+            <legend>Соответсвие стандартам</legend>
+            <label><input type="radio" name="standart" value="HTML_5"> HTML 5
+            </label>
+            <br>
+            <label><input type="radio" name="standart" value="HTML_4.01_STRICT"> HTML 4.01 STRICT
+            </label>
+            <br>
+            <label><input type="radio" name="standart" value="XHTML_1.0_TRANSITIONAL"> XHTML 1.0 TRANSITIONAL
+            </label>
+            </fieldset>
+            <textarea name="Comment" placeholder="" cols="40" rows="10" style="resize: both;"></textarea> 
+            <br>
+            <input type="submit" value="Заказать сайт!">
+    </form>
+</body>
+</html>

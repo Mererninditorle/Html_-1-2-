@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework_Edited</title>
+    <style>
+        .body{
+            margin: 0;
+        }
+        .Site{
+            width: 1000px;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        header{
+            height: 100px;
+            background-color: darkolivegreen;
+            text-align: center;
+        }
+        nav{
+            height: 50px;
+            background-color: navy;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .Content{
+            height: calc(100% - 230px);
+            margin: 10px 0;
+            font-size: 0;/* чтобы main и aside встали рядом, делается в теге родителя*/
+        }
+        main{
+            height: 100%;
+            width: calc(80% - 10px);
+            background-color: darkred;
+            display: inline-block;
+            vertical-align: top; /* ОБЯЗАТЕЛЬНО!!!!!!!! Для того, чтобы выровнять конструкцию, иначе, конструкция не бедет работать*/
+            font-size: 20px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        aside{
+            height: 100%;
+            width: 20%;
+            background-color: lightgreen;
+            display: inline-block;
+            vertical-align: top; /* ОБЯЗАТЕЛЬНО!!!!!!!! Для того, чтобы выровнять конструкцию, иначе, конструкция не бедет работать*/
+            font-size: 20px;
+            text-align: center;
+        }
+        footer{
+            height: 50px;
+            background-color: cadetblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="Site">
+        <header>Заголовок</header>    
+
+        <nav>Навигационная панель</nav>
+        
+        <div class="Content"> 
+            <main>Основной контент</main>
+            <aside>Боковая панель</aside> 
+        </div>  
+
+        <footer>Подвал</footer>       
+    </div>
+</body>
+</html>
