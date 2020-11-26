@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bilbao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            padding: 100px 200px;
+            box-sizing: border-box; 
+            display: flex;
+            justify-content: space-between;  
+            background: rgb(255, 254, 255);
+        }
+        h1 {
+            color: darkblue;
+            font: 600 30px sans-serif;
+            text-transform: uppercase;
+            position: relative;
+        }
+        h1::before {
+            display: block;
+            content: "";
+            width: 100px;
+            height: 200px;
+            background: rgb(249, 191, 184);
+            position: absolute;
+            top: -50px;
+            left: -30px;
+            z-index: -1;
+        }
+        h2 {
+            font: 600 30px sans-serif;
+        }
+        .right {
+            width: 50%;
+        }
+        li {
+            list-style-type: none;
+            font: 300 15px sans-serif;
+        }
+        img {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        .image {
+            width: 500px;
+            height: 335px;
+            overflow: hidden;
+        }
+        .Watermark {
+            position: absolute;
+            bottom: 200px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PHONE <br> MOCKUP</h1>
+    <div class="Watermark">BILBAO <br>DESIGN</div>
+    <div class="image"><img src="https://pngimg.com/uploads/iphone_11/iphone_11_PNG38.png">
+    </div>
+    <div class="right">
+    <h2>App Design For Mobile</h2>
+    <ul>
+        <li class=" column p1">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sed dolorem atque unde.</p>
+        </li>
+        <li class=" column p2">
+            <h3>Fosdua Ralbon Bidwun.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sed dolorem atque unde.</p>
+        </li>
+        <li class=" column p3">
+            <h3>Faster. Clever.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sed dolorem atque unde.</p>
+        </li>
+    </ul>
+    </div>
+    
+</body>
+</html>

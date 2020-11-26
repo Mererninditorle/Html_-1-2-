@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 30px auto;
+    width: 700px;
+    text-align: justify;
+    font: 20px sans-serif;
+}
+/*
+    ::before - перед тегом
+    ::after - после тега
+*/
+p::before {
+    /*данный селектор будет создавать псевдоэлемент ПЕРЕД ВСЕМИ абзацами <p>*/
+    content: "Начало: "; 
+    /*Должен быть везде*/
+    color: red;
+}
+p::after {
+    content: attr(title) ;
+    color: rgb(162, 255, 0);
+}
+h1 {
+    width: 700px;
+    margin: 30px auto;
+    color: darkslategray;
+    font: 50px / 1 fantasy;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1::before,
+h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: dodgerblue;
+}
+.Daddy {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto 30px;
+    background: crimson;
+    position: relative;
+}
+.child {
+    width: 100px;
+    height: 100px;
+    position: static; /* Есть у всех тегов */
+}
+.child1 {
+    background: darkblue;
+    position: absolute; 
+    width: auto;
+    height: auto;
+    /* сдвигает относительно границ ближайшего родителя у которого position отличен от static
+    Если такого родителя нет - распологается относительно границ вьюпорта (экрана) */
+
+    /* top | left | right | bottom */
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    z-index: 2;
+}
+.child2 {
+    background: darkkhaki;
+    position: relative; 
+    /* Относительно своего местоположения, с сохранением своего статичного места */
+    top: 150px;
+    left: 20px;
+    z-index: 1;
+    /* По умолчанию все теги с position: static имеют z-index = 0 */
+}
+.child3 {
+    background: darkslategray;
+    position: fixed;
+    width: 700px;
+    height: 200px;
+    /* ВСЕГДА распологается относительно границ вьюпорта */
+    top: calc(50vh - 200px);
+    left: calc(50%- 350px);
+    z-index: 3;
+}
